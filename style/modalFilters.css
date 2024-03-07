@@ -1,0 +1,297 @@
+/* modal type filter */
+#modalType{
+   background:rgba(255,255,255,0.995); 
+	border-radius:7px;
+    border: 1px solid  #dddedf;
+    box-shadow:0 0 150px 1px #dddedf;
+	width:330px;
+	height:355px;
+    position: fixed;
+    top:127px;
+	left:520px;
+    transition: .8s;
+}
+ #modalType>.closeBtn{
+    width:40px;
+    height: 40px;
+    background: url("../img/image/modalimg/close1.JPG") no-repeat;
+    position:absolute;
+	top:10px;
+	left:10px;
+	cursor:pointer;
+} 
+#modalType>.types{
+    /* display: block; */
+    margin-top: 20px ;
+    border-bottom: 1px solid  #dddedf;
+
+}
+#modalType>.types>.items > input {
+    display:none;
+}	  
+#modalType>.types>.items >  input:checked + label {
+    background-image: url("../img/accar/ch03.png") 				  
+}	  
+#modalType>.types>.items> label{
+    padding:15px 60px 0 0;
+    font-size:13px;
+    display:block;
+    background: url("../img/accar/ch03un.png") no-repeat 90% 50%;	
+    background-size:18px;			  
+    cursor:pointer;
+    direction: rtl;
+}
+#modalType>#btnEdit{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(101, 105, 105);
+    border-radius:5px;
+    border: 1px solid   rgb(101, 105, 105);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 230px;
+
+}
+#modalType.hide{
+	transform: translateY(200%);
+}
+#modalType.show{
+	transform: translateY(0%);
+} 
+/* ============Modal Price Filter======= */
+#modalPrice{
+    background:rgba(255,255,255,0.995); 
+     border-radius:7px;
+     border: 1px solid  #dddedf;
+     box-shadow:0 0 150px 1px #dddedf;
+     width:330px;
+     height:200px;
+     position: fixed;
+     top:127px;
+     left:650px;
+     transition: .8s;
+ }
+ #modalPrice > .closeBtn{
+    width:30px;
+    height:30px;
+    background: url("../img/image/modalimg/close1.JPG") no-repeat;
+    background-size:95%;
+    position:absolute;
+	top:7px;
+	left:7px;
+	cursor:pointer;
+} 
+#modalPrice > .title{
+    margin:20px 20px 0  0;
+   font-size: 15px;
+} 
+#modalPrice > .content > input[type=range] {
+    appearance: none;
+    display:inline-block;
+    margin:10px auto;
+    border:0px none;
+    text-align:center;	
+    height:5px;
+    background:#eee;	
+    border-radius:10px;	
+    width:50%;
+}
+#modalPrice > .content > span{			
+    line-height:10px;
+    position:relative;
+    top:-13px;
+    padding:0 15px;
+}
+#modalPrice > .content > output{
+    margin:3px;
+    text-align:center;
+    color:rgb(93, 73, 248);
+    font-weight:700px;
+    font-size: 15px;
+    display:block;
+            
+}
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(93, 73, 248);
+    height: 22px;
+    width: 14px;
+ }	
+ #modalPrice>#btnEditPrice{
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgb(101, 105, 105);
+    border-radius:5px;
+    border: 1px solid   rgb(101, 105, 105);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 230px;
+
+}
+#modalPrice.hide{
+	transform: translateY(200%);
+}
+#modalPrice.show{
+	transform: translateY(0%);
+}
+/* ============Modal Price Number======= */
+#modalNumber{
+    background:rgba(255,255,255,0.995); 
+    border-radius:7px;
+    border: 1px solid  #dddedf;
+    box-shadow:0 0 150px 1px #dddedf;
+    width:330px;
+    height:150px;
+    position: fixed;
+    top:127px;
+    right:140px;
+    transition: .8s;
+}
+#modalNumber > .closeBtn{
+    width:30px;
+    height:30px;
+    background: url("../img/image/modalimg/close1.JPG") no-repeat;
+    background-size:95%;
+    position:absolute;
+	top:7px;
+	left:7px;
+	cursor:pointer;
+}
+#modalNumber >.content{
+    margin-top: 35px;
+    width: 100%;
+    height:50%;
+    border-bottom:1px solid  #dddedf;
+}
+#modalNumber >.content>.right{
+    float: right;
+    
+ }
+ #modalNumber >.content>.right>img{
+    width:30px;
+    height:40px;
+    position: relative;
+    top:3px;
+    right:5px;
+ }
+
+ #modalNumber >.content>.right>.number>span.line1{
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+    font-size: .875rem;
+    position: relative;
+    right: 41px;
+    bottom: 39px;
+ }
+ #modalNumber >.content>.right>.number>span.line2{
+    display: block;
+    font-weight: 400;
+    font-size: .75rem;
+    margin: .1875rem 0 0;
+    position: relative;
+    right: 50px;
+    bottom: 41px;
+    
+ }
+ #modalNumber >.content>.left{
+    width:50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+ }
+ #modalNumber > .content>.left>.btnPlus{
+    width:30px;
+    height:30px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    font-size:20px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    bottom: -14px;
+    
+ }
+ #modalNumber >.content>.left>.number{
+    display: block;
+    font-weight: 700;
+    font-size: .875rem;
+    margin: .1875rem 0 0;
+   position: relative;
+    right: 55px;
+    bottom: -15px;
+    
+ }
+ #modalNumber >.content>.left>.btnMinus{
+    width:30px;
+    height:30px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    font-size:25px;
+    text-align: center;
+    line-height: 10px;
+    position: relative;
+    right: 62px;
+    bottom: -14px;
+    
+ }
+ #modalNumber>#btnEditNumber{
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgb(101, 105, 105);
+    border-radius:5px;
+    border: 1px solid   rgb(101, 105, 105);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 230px;
+
+}
+#modalNumber.hide{
+	transform: translateY(-200%);
+}
+#modalNumber.show{
+	transform: translateY(0%);
+}
+
+
+/* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+   
+}	
+
+@media screen and (max-width:800px){
+     
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    
+
+}
+
+/* *** */
+@media screen and (max-width:1200px){	
+
+}
+/* *** */

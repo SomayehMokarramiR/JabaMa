@@ -1,0 +1,236 @@
+.sec3{
+    width:100%;
+    height:500px;
+    background-color: #2e2828;
+}
+body{
+    direction:rtl;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+.sec3>.container>.top>.container{
+    width:100%;
+    height:80px;
+    display: flex;
+    flex-flow: row nowrap;  
+}
+.sec3>.container>.top>.container>.moveSlider{
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #ee1010; 
+    /* float: left; */
+    margin-top:20px; 
+   position: relative;
+    right:1200px; 
+
+}
+.sec3>.container>.top>.container>.moveSlider>.next{
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #2e2828;
+    border: 1px solid #ddd;
+    background: url(../img/image/slider_Sec2/right.png)no-repeat 50% 50%;
+    background-size:35%;
+    color: #2e2828;
+    
+}
+.sec3>.container>.top>.container>.moveSlider>.prev{
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    background: url(../img/image/slider_Sec2/left.png)no-repeat 50% 50%;
+    background-size: 35%;
+}
+.sec3>.container>.top>.container>.viewAll{
+    z-index: 1;
+    color:#171718;
+    width: 70px; 
+    height:35px;
+    /* padding: 7px; */
+    background-color:#fff; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top:20px; 
+    white-space: nowrap;
+    font-size: 12px;
+    /* text-align: center; */
+    position: relative;
+    right:1020px; 
+}
+/* bottom */
+/* right */
+
+.sec3>.container>.bottom>.container>.right{
+    float: right;
+    width:15%;
+    color: #ffffff;
+    position: relative;
+    right: 0; 
+    margin:20px 20px 0 0 ;
+}
+.sec3>.container>.bottom>.container>.right>.text1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px 0;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.sec3>.container>.bottom>.container>.right>.text2{
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+}
+.sec3>.container>.bottom>.container>.right>.bartime_stock{
+    margin: 0 auto;
+    width: 270px;
+    height: 40px;
+
+}
+.sec3>.container>.bottom>.container>.right>.bartime_stock>.time{
+    display: block;
+    font-size: 1rem;
+    direction: ltr;
+
+}
+.sec3>.container>.bottom>.container>.right>.bartime_stock>.stock{
+    height: 10px;
+	width: 100%;
+	background: #ddd;
+    margin: 10px auto;  
+    direction:ltr;
+    display: block;
+
+}
+.sec3>.container>.bottom>.container>.right>.bartime_stock>.stock>span{
+    color: orange;
+    border-radius: 4px;
+    width: 60%;
+	height:100%;
+    display: block; 
+    z-index: 1;
+
+}
+
+
+/* ********** */
+/* left */
+.sec3>.container>.bottom>.container{
+    width:100%; 
+
+
+}
+
+.sec3>.container>.bottom>.container>.left{
+    width:78%;  
+    position: relative;
+    left: 0;
+    z-index: 1;
+    float:left;
+}
+.sec3>.container>.bottom>.container>.left> .slider{
+    width: 100%;
+  overflow: hidden; 
+}
+.sec3>.container>.bottom>.container>.left>.slider>.holder>.gal{
+    width:600%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap; 
+    gap:10px;
+    position: relative;
+    left: 0%;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items{
+    width: 280px;
+    height:400px;
+    margin-left: 9px;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+    float: right; 
+}
+
+.sec3>.container>.bottom>.container>.left>.slider>.holder>.gal>.items>img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 0  ; 
+
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe{
+    margin-right: 20px;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.star{
+    width:36px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/image/icons/star.PNG") repeat-x;
+	background-size: 18px;
+    display: block;
+    float: right;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.view{
+    opacity: .5;
+    font-weight: 700;
+    font-size: .75rem;
+    display: block;
+    float: right;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.desc{
+    clear: both;
+    font-size: 14px;
+    display: block;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.date{
+    opacity: .5;
+    font-weight: 700;
+    font-size: .75rem;
+    margin: 0 0 .5rem;
+    display: block;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.location{
+    display: flex;
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.priceOffer{
+    width: 150px;
+    height: 30px;
+}
+.sec3>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.priceOffer>.Price2{
+    opacity: .5;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.priceOffer>.Off{
+    color: #fff;
+    font-weight: 700;
+    font-size:.8rem;
+    border-radius: .875rem;
+    padding: .11rem .4rem;
+    background-color: #fb3449;
+    direction: ltr;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.price{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sec3>.container>.bottom>.container>.left> .slider>.holder>.gal>.items>.describe>.price span{
+    opacity: .5;
+    font-size: .85rem;
+}

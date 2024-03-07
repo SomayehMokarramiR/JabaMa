@@ -1,0 +1,260 @@
+@font-face{
+	src:url("../fonts/Yekan.ttf");
+	font-family:yek;
+}
+body{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: Yek;
+}
+.container{
+    width:1400px;
+    margin: 0 auto;
+}
+#headerpage2{
+    width: 100%;
+    height:125px;
+    border-bottom:1px solid #ddd;
+    margin-top: 21px;
+}
+#header>.container>.top{   
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    cursor: pointer;
+}
+/* #headerpage2{
+    position: fixed;
+} */
+#headerpage2>.container>.top>.right{
+
+    position: relative;
+    right:15px;
+    top:10px;
+}
+#headerpage2>.container>.top>.center> input{
+    width:280px;
+    height: 2.2rem;
+    border-radius: .75rem;
+    background-color: #fff;
+    border: 1px solid #d0d1d2;
+    box-shadow: 0 .5rem 1.5rem -.25rem rgba(0,0,0,.08);
+    margin:0 auto;
+    position: relative;
+    bottom: 30px;
+    right:493px;
+}
+#headerpage2>.container>.top>.center>img.search{
+    position: relative;
+    right: 450px; 
+    top: -21px;
+    /* z-index: 1; */
+}
+
+/* #headerpage2>.container>.top>.center{
+    width:280px;
+    height: 2.5rem;
+    border-radius: .75rem;
+    background-color: #fff;
+    border: 1px solid #d0d1d2;
+    box-shadow: 0 .5rem 1.5rem -.25rem rgba(0,0,0,.08);
+    margin:0 auto;
+    position: relative;
+    bottom: 30px;
+}
+#headerpage2>.container>.top>.center>img{
+    position: relative;
+    right: 10px;
+    top:5px;
+} */
+#headerpage2>.container>.top>.left>.login{
+    width:130px;
+    height:40px;
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+    border:1px solid #fafafa;
+    cursor: pointer;
+    float: left;
+    position: relative; 
+    bottom:80px;
+    left:-30px;
+}
+
+#headerpage2>.container>.top>.left>.login> img{
+    position: relative; 
+    top:8px;
+    right:17px;
+ }
+#headerpage2>.container>.top>.left>.login> p.login{
+   font-weight: 500;
+   font-size: 14px;
+   padding: 0 0.75rem;
+   position: relative; 
+   bottom:40px; 
+   right:32px;
+}
+#headerpage2>.container>.top>.left>.favorite{
+
+    width:110px;
+    height:35px;
+    display: flex;
+    cursor: pointer;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    white-space: nowrap;
+    background-color: transparent;
+    float: left;
+    position: relative; 
+    left:240px; 
+    bottom:75px; 
+}
+
+#headerpage2>.container>.top>.left>.favorite>img{
+    width:31px;
+    height:25px;
+     position: relative; 
+    top:10px;
+}
+#headerpage2>.container>.top>.left>.favorite>p.favorite{
+    color: #131b1f;
+    font-size: .8rem;
+    position: relative; 
+    bottom:2px;
+    left:-2px;
+    font-weight:600;
+   
+}
+/* ****  bottom ****** */
+
+#headerpage2>.container>.bottom{
+    display:flex;
+    flex-flow: row nowrap;
+    gap:10px;
+    margin-right: 10px;
+}
+#headerpage2>.container>.bottom>.filter{
+    color: #131b1f;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    border-radius: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #dddedf;
+     padding: 0 1rem ; 
+    font-weight: 300;
+    position: relative;
+    bottom: 10px;
+    height: 30px;
+}
+/*********** modal(login)**************/
+/* .hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+ */
+
+#modal{
+    position: fixed;
+	top:170px;
+    left:30%;
+
+    width: 500px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 15px;
+    border:1px solid #ddd;
+    margin: 0 auto;
+    transition: .6s;
+}
+#modal>.closeBtn{
+    width:40px;
+    height: 40px;
+    background: url(../img/image/modalimg/close1.JPG) no-repeat;
+    position: absolute;
+    top:10px;
+    left:10px;
+    cursor: pointer;
+}
+#modal>.arm{
+    width: 100px;
+    height: 40px;   
+    background: url(../img/image/modalimg/arm.JPG) no-repeat;
+    margin: 0 auto;
+}
+#modal>.text1{
+    margin: 1.6875rem 0 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-align: center;
+}
+#modal>.text2{
+    margin: 0;
+    line-height: 2;
+    font-size: .875rem;
+    font-weight: 300;
+    opacity: .5;
+    text-align: center;
+}
+#modal>input{
+    direction: ltr; 
+   width: 330px;
+   color: #a4a5a7;
+   border: 1px solid #131b1f ;
+   padding: 1.08375rem 0.5rem;
+   font-size: .8rem;
+   font-weight: 400;
+   margin-right: 75px;
+   margin-top: 40px; 
+    border-radius:15px;
+}
+#modal>.btn{
+    width: 330px;
+    padding: .7rem 0.5rem;
+    background-color: #131b1f;
+    border: 1px solid #131b1f ;
+    font-weight: 400;
+    margin-right: 75px;
+    margin-top: 40px; 
+    border-radius:15px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+ #modal.hide{
+	transform: translateY(200%);
+}
+#modal.show{
+	transform: translateY(0%);
+} 
+
+/* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+   
+}	
+
+@media screen and (max-width:800px){
+     
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    
+
+}
+
+/* *** */
+@media screen and (max-width:1200px){	
+
+}
+/* *** */

@@ -1,0 +1,209 @@
+body{
+    direction: rtl;
+}
+.sec13{
+    width:100%;
+    height:500px;
+    background-color: #2e2828;
+
+}
+.container{
+    width:1400px;
+    margin: 0 auto;
+}
+.sec13>.top{
+    width:100%;
+    height:90px;
+    display: flex;
+    flex-flow: row nowrap; 
+  /* background-color: gold; */
+}
+.sec13>.top>.container>.right{
+    float: right;
+}
+.sec13>.top>.container>.right>.title13{
+  width:300px;
+  height:100%;
+    /* background-color: cadetblue; */
+   position: relative;
+   bottom: 25px;
+   right: 20px;
+}
+
+.sec13>.top>.container>.right>.title13>.text1{
+    font-weight: 700;
+    font-size: 25px;
+    color:#fff;
+    text-align: right;
+  
+}
+.sec13>.top>.container>.right>.title13>.text2{
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    bottom:15px;
+}
+.sec13>.top>.container>.left{
+    float: left;
+}
+.sec13>.top>.container>.left>.moveSlider{
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #ee1010; 
+    float: left;
+    margin: 8px 0; 
+    position: relative;
+    left:20px;
+}
+.sec13>.top>.container>.left>.moveSlider>.next{
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #2e2828;
+    border: 1px solid #ddd;
+    background: url(../img/image/slider_Sec2/right.png)no-repeat 50% 50%;
+    background-size:35%;
+    color: #2e2828;
+}
+.sec13>.top>.container>.left>.moveSlider>.prev{
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    background: url(../img/image/slider_Sec2/left.png)no-repeat 50% 50%;
+    background-size: 35%;
+}
+.sec13>.top>.container>.left>.viewAll{
+    z-index: 1;
+    color:#171718;
+   width: 70px; 
+    padding: 7px 8px;
+    background-color:#fff; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    left:50px; 
+    margin: 8px 0; 
+    white-space: nowrap;
+    font-size: 12px;
+    float: left;
+}
+/* bottom_slider */
+
+
+.sec13>.bottom{
+    clear:both;
+    width:100%;
+   position: relative;
+   bottom:50px;
+   margin:0 20px;
+   margin-left: 20px;
+  /* overflow: hidden;    */
+  /* background-color: darkturquoise;   */
+} 
+.sec13>.bottom>.container>.slider{
+    width: 100%;
+  overflow: hidden;   
+}
+.sec13>.bottom>.container>.slider>.holder>.gal{
+    width:600%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap; 
+    gap:10px;
+    position: relative;
+    left: 0%;
+
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items{
+    width: 280px;
+    height:400px;
+    margin-left: 9px;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 50px;
+    float: left; 
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe{
+    margin-right: 20px;
+
+}
+
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.star{
+    width:36px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/image/icons/star.PNG") repeat-x;
+	background-size: 18px;
+    display: block;
+    float: right;
+
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.view{
+    opacity: .5;
+    font-weight: 700;
+    font-size: .75rem;
+    display: block;
+    float: right;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.desc{
+    clear: both;
+    font-size: 14px;
+    display: block;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.date{
+    opacity: .5;
+    font-weight: 700;
+    font-size: .75rem;
+    margin: 0 0 .5rem;
+    display: block;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.location{
+    display: flex;
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.priceOffer{
+    width: 150px;
+    height: 30px;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.Price2{
+    opacity: .5;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.priceOffer>.Off{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: .875rem;
+    padding: .125rem .5rem;
+    background-color: #fb3449;
+    direction: ltr;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.price{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sec13>.bottom>.container>.slider>.holder>.gal>.items>.describe>.price span{
+    opacity: .5;
+    font-size: .8rem;
+}
+
+
+

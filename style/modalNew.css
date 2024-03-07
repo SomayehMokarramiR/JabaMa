@@ -1,0 +1,457 @@
+@font-face{
+	src:url("../fonts/Yekan.ttf");
+	font-family:yek;
+}
+body{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: Yek;
+    margin: 0 auto;
+ 
+}
+
+/* modalNew css */
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+} 
+/******** btn close *******/
+ .container>.holderModal{
+     display: flex;
+    justify-content: center;
+    justify-items: center;  
+}
+
+
+#modalNew>.closeBtn{
+    width:40px;
+    height: 40px;
+    background: url("../img/image/modalimg/close1.JPG") no-repeat;
+    position:absolute;
+	top:10px;
+	left:10px;
+	cursor:pointer;
+}
+#modalNew{
+	background:rgba(255,255,255,0.995);
+	border-radius:3px;
+	box-shadow:0 0 150px 1px #ddd;
+	width:1200px;
+	height:600px;
+    position: fixed;
+    top:20px;
+	left:50px;
+    transition: 0.7s;
+
+ } 
+#modalNew>.titleModal{
+    width: 100%;
+    height: 30px;
+    margin:25px 25px 36px 0;
+
+ }
+
+#modalNew>.titleModal>.text1{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #444040;
+}
+#modalNew>.titleModal>.text2{
+    display: flex;
+    float: right;
+}
+/* #modalNew>.titleModal>.text2{
+    float: right;
+} */
+
+#modalNew>.titleModal>.text2>.star{
+
+    width:36px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/image/icons/star.PNG") repeat-x;
+	background-size: 18px;
+    display: block;
+    float: right;
+
+}
+#modalNew>.titleModal>.text2>.allStar{
+    opacity: .5;
+    font-weight: 400;
+    font-size: .9rem;
+    display: block;
+    float: right;
+}
+#modalNew>.titleModal>.text2>.locImg{
+    width:36px;
+	height: 20px;
+	margin-left: 10px;
+	background: url("../img/image/header/location.JPG") no-repeat;
+    display: block;
+    float: right;
+}
+
+#modalNew>.titleModal>.text2>.location{
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+    display: block;
+    float: right;
+}
+/* left */
+
+
+/* #modalNew>.left>.favorite{
+
+    width:110px;
+    height:35px;
+    display: flex;
+    cursor: pointer;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    white-space: nowrap;
+    background-color: transparent;
+    float: left;
+    position: relative; 
+    left:230px; 
+    bottom:75px; 
+}
+
+#modalNew>.left>.favorite>img{
+    width:31px;
+    height:25px;
+     position: relative; 
+    top:5px;
+}
+#modalNew>.left>.favorite>p.favorite{
+    color: #131b1f;
+    font-size: .8rem;
+    position: relative; 
+    bottom:5px;
+    left:-2px;
+    font-weight:600;
+   
+} */
+
+
+
+
+#modalNew>.left>.favorite{
+
+    width:200px;
+    height:40px;
+    display: flex;
+    cursor: pointer;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    white-space: nowrap;
+    background-color: transparent;
+    float: left;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.07);
+    position: relative;
+    left:80px;
+    bottom:60px; 
+}
+
+#modalNew>.left>.favorite>img{
+    width:31px;
+    height:25px;
+     position: relative; 
+    top:10px;
+    border-left: 1px solid #afacac;
+    padding-left: 5px;
+}
+#modalNew>.favorite>p.favorite{
+    color: #131b1f;
+    font-size: 1rem;
+    position: relative; 
+    bottom:7px;
+    left:-2px;
+    font-weight:500;
+    padding-right: 5px;
+   
+}
+#modalNew>.left>.share{
+
+    width:135px;
+    height:40px;
+    display: flex;
+    cursor: pointer;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    white-space: nowrap;
+    background-color: transparent;
+    float: left;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.07);
+    position: relative;
+    left:100px;
+    bottom:60px; 
+}
+
+#modalNew>.left>.share>img{
+    width:27px;
+    height:20px;
+    position: relative; 
+    top:10px;
+    border-left: 1px solid #afacac;
+    padding-left: 5px;
+}
+#modalNew>.left>.share>p.share{
+    color: #131b1f;
+    font-size: .9rem;
+    position: relative; 
+    bottom:6px;
+    left:-2px;
+    font-weight:500;
+    padding-right: 5px;
+   
+}
+
+/* Top */
+#modalNew>.top{
+    clear:both;
+  display: flex;
+  height:300px;
+}
+#modalNew>.top>.right{
+    width:60%;
+    height:100%;
+    margin-right: 30px;
+    float: right;
+}
+
+
+#content>.main> div:not(.title){
+    border:1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 3px;;
+} 
+
+.ChagePicOver{
+    opacity: .5;
+    cursor: pointer;
+    float:right;
+    width:50%;
+    height:98%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.ChagePicOut{
+    opacity: 1;
+    float:right;
+    width:50%;
+    height:98%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* cursor: pointer; */
+}
+
+
+#modalNew>.top>.right>#bigImg{
+    cursor: pointer;
+}
+#modalNew>.top>.right>#bigImg{
+    width:100%;
+    height:100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#modalNew>.top>.left{
+    width:40%;
+    height:100%;
+    margin:0 15px 0 30px;
+    float: left;
+}
+
+#modalNew>.top>.left>.row1{
+    width:100%;
+    height:50%;
+    display:flex;
+    gap:10px;
+     margin-bottom: 10px; 
+}
+/* #modalNew>.top>.left>.row1>img.col1{
+   float:right;
+   width:50%;
+   height:98%;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+} 
+
+#modalNew>.top>.left>.row1>img.col2{
+    float:left;
+    width:50%;
+    height:98%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+ }*/
+ .colNew1:hover{
+    cursor: pointer;
+ }  
+ .colNew1{
+    float:right;
+    width:50%;
+    height:98%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.colNew2:hover{
+    cursor: pointer;
+ }  
+.colNew2{
+    float:left;
+    width:50%;
+    height:98%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#modalNew>.top>.left>.row2{
+    clear: both;
+    width:100%;
+    height:50%;
+    display:flex;
+    gap:10px;
+}
+/* 
+#modalNew>.top>.left>.row2>img.col1{
+    float:right;
+    width:50%;
+    height:98%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+ }
+
+#modalNew>.top>.left>.row2>img.col2{
+     float:left;
+     width:50%;
+     height:98%;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+  } 
+  */
+
+
+/* Bottom (Description) */
+#modalNew > .bottom{
+    clear: both;
+    width:55%;
+    margin-right:25px;
+ }
+  /*  sec1*/
+  #modalNew >.bottom>.sec1{
+    width:90%;
+    /* height:20px; */
+    margin: 10px 0 30px;
+     /* border-bottom: 1px solid #bdb9b9;  */
+  }
+  
+  #modalNew >.bottom>.sec1>.text1{
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 83px .3125rem;
+  }
+  #modalNew >.bottom>.sec1>.text2{
+    font-weight: 500;
+    font-size: .9rem;
+    margin: 0 83px .3125rem;
+  }
+
+    /* ******sec3****** */
+
+    #modalNew >.bottom>.sec3{
+        width:90%;
+        height:40px; 
+        margin: 20px 30px 20px ;
+        /* border-bottom: 1px solid #bdb9b9;  */
+    }
+    
+    #modalNew >.bottom>.sec3>img{
+    float: right;
+
+    }
+    #modalNew >.bottom>.sec3>.left{
+    float:left;
+    width: 100%;
+    margin: -33px -51px;
+    }
+    #modalNew >.bottom>.sec3>.left>.title{
+    font-weight: 700;
+    font-size: 1.125rem;
+    }
+    #modalNew >.bottom>.rightSection>.sec3>.left .desc{
+    font-weight: 500;
+    font-size: .8rem;
+    margin: -30px -51px;
+    background-color: red;
+
+    }
+        /* ******sec4****** */
+    
+    #modalNew >.bottom>.sec4{
+    width:90%;
+    /* height:20px; */
+    margin: 20px 30px 20px ;
+     /* border-bottom: 1px solid #bdb9b9;  */
+    }
+        
+    #modalNew >.bottom>.sec4>img{
+    float: right;
+
+    }
+    #modalNew >.bottom>.sec4>.left{
+        float:left;
+        width: 100%;
+        margin: -26px -51px;
+    }
+    #modalNew >.bottom>.sec4>.left>.title{
+    font-weight: 700;
+    font-size: 1.125rem;
+    }
+    #modalNew >.bottom>.sec4>.left>.desc{
+        font-weight: 500;
+        font-size: .8rem;
+        position: relative;
+        top:-10px;
+    }
+
+    #modalNew.hide{
+        transform: translateY(-200%);
+    }
+    #modalNew.show{
+        transform: translateY(0%);
+    } 
+
+    .zoom{
+        transform: scale(1.07);
+    }
+
+
+    /* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+   
+}	
+
+@media screen and (max-width:800px){
+     
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    
+
+}
+
+/* *** */
+@media screen and (max-width:1200px){	
+
+}
+/* *** */

@@ -1,0 +1,118 @@
+#footer{
+    width:100%;
+    height:400px;
+    padding-top: 4.375rem;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    margin-top:100px;
+}
+#footer>.container>.Menus{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 130px;
+    justify-content:space-around
+}
+#footer>.container>.Menus>.menu1{
+
+}
+#footer>.container>.Menus>.menu1>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer>.container>.Menus>.menu1>ul>li.title{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+#footer>.container>.Menus>.menu1>ul>li{
+    color: #131b1f;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;;
+}
+
+#footer>.container>.Menus>.menu2{
+    
+}
+#footer>.container>.Menus>.menu2>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer>.container>.Menus>.menu2>ul>li.title{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+#footer>.container>.Menus>.menu2>ul>li{
+    color: #131b1f;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;;
+}
+#footer>.container>.Menus>.menu3{
+    
+}
+#footer>.container>.Menus>.menu3>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer>.container>.Menus>.menu3>ul>li.title{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+#footer>.container>.Menus>.menu3>ul>li{
+    color: #131b1f;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;;
+}
+#footer>.container>.Menus>.menu4{
+    
+}
+#footer>.container>.Menus>.menu4>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer>.container>.Menus>.menu4>ul>li{
+    color: #131b1f;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;;
+}
+
+
+
+
+/* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+   
+}	
+
+@media screen and (max-width:800px){
+     
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    
+
+}
+
+/* *** */
+@media screen and (max-width:1200px){	
+
+}
+/* *** */

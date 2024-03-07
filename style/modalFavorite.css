@@ -1,0 +1,157 @@
+/* ============Modal number Number======= */
+#modalFavorite{
+    box-shadow:0 0 150px 1px #dddedf;
+    transition: .8s;
+    width:100%;
+	 height:98%;  
+    top:0;
+    left:0;
+    z-index:900;
+    background:rgba(250,250,250,1); 
+    transition:1s;
+    border-top:7px solid red;
+    position: relative;
+}
+#modalFavorite > h2{
+    margin:40px 150px;
+	color:green;
+    font-size: 30px;
+    font-weight: 700px;
+}
+#modalFavorite > #backBtn{
+	width:45px;
+	height:45px;
+	display:inline-block;
+	background:url("../img/icons/back3.png") no-repeat ;
+	background-size:90%;
+	position:absolute;
+	top:50px;
+	left:150px;
+	cursor:pointer;
+}
+#modalFavorite >.content{
+    margin:10px 50px 30px;
+    /* border-bottom:1px solid  #dddedf; */
+}
+#modalFavorite >.content>.rowItems>.items{
+    width:50%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-grow: 1;
+    
+    margin-top: 50px;
+ }
+ #modalFavorite >.content>.rowItems{
+   display: flex;
+   width:50%;
+   flex-grow:1;
+ }
+ #modalFavorite >.content>.rowItems>.items{
+
+   /* width:50%;
+   height:30%;*/
+ } 
+ #modalFavorite >.content>.rowItems>.items>.right>img:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    opacity: 0.8;
+ }
+ #modalFavorite >.content>.rowItems>.items>.right>img{
+   width:170px;
+   height:170px;
+   border-radius: 15px 15px 15px 15px;
+ 
+ }
+
+ #modalFavorite >.content>.rowItems>.items>.left{
+    width:60%;
+    height:30%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 9px rgba(0,0,0,.2);
+   position: relative;
+   left: 3%; 
+   background: #fff;
+    z-index: 100;
+    top:25px;
+ } 
+ #modalFavorite >.content>.rowItems>.items>.left>.describe{
+   margin:0 20%;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.desc{
+    font-weight: 600;
+    font-size:14px;
+    /* text-align: center; */
+    display: block; 
+    margin: 5px 0;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.star{
+    width:36px;
+    height: 20px;
+    margin-left: 10px;
+    background: url("../img/image/icons/star.PNG") repeat-x;
+    background-size: 18px;
+    display: block;
+    float: right;
+    /* margin: 10px 0; */
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.view{
+    opacity: .5;
+    font-weight: 700;
+    font-size: .75rem;
+     display: block;
+     /* float: right; */
+     margin: 5px 0;
+
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.location{
+    clear:both;
+    margin: 0 0 .9375rem;
+    font-weight: 600;
+    align-items: center;
+    color: #323c41;
+    display: block; 
+    margin: 5px 0;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.room{
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+    margin: 10px 0;
+    font-weight: 400;
+ }
+ #modalFavorite >.content>.rowItems>.left>.describe>.number{
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+    margin: 10px 0;
+    font-weight: 400;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.priceOffer{
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.priceOffer>.Price2{
+    font-size: .75rem;
+    font-weight: 400;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.priceOffer>.price{
+    font-weight: 600;
+    font-size: .875rem;
+ }
+ #modalFavorite >.content>.rowItems>.items>.left>.describe>.priceOffer>.price>.spp{
+    /* display: block; */
+    opacity: .5;
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+#modalFavorite.hide{
+    transform:translateY(150%);
+}
+#modalFavorite.show{
+    transform:translateY(0%);
+}

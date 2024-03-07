@@ -1,0 +1,487 @@
+@font-face{
+	src:url("../fonts/Yekan.ttf");
+	font-family:yek;
+}
+body{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: Yek;
+    /* position: relative; */
+}
+#header{
+
+    width: 100%;
+    height: 600px;;
+    background: url(../img/image/header.jpg) no-repeat;
+    background-size: 100% 100%; 
+    box-sizing: border-box;
+}
+#header>.container>.top{   
+    width:100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    top:10px;
+}
+#header>.container>.top>.right{   
+    width:50%;
+    height: 100%;
+
+}
+#header>.container>.top>.right>img{
+   width: 100px;
+   height:50px;
+}
+#header>.container>.top>.left{
+    
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#header>.container>.top>.left>.experience{
+    width:100px;
+    height: 100%;
+    position: relative;
+    right:260px;
+    cursor: pointer;
+}
+#header>.container>.top>.left>.experience>img{
+
+    position: relative; 
+    top:15px;
+    right:3px; 
+}
+#header>.container>.top>.left>.experience>p.experience{
+    color: #FFF;
+    font-size: 14px; 
+    position: relative; 
+    right:30px;
+    bottom:30px;
+
+}
+#header>.container>.top>.left>.favorite{
+    width:100px;
+    height: 100%;
+    display: flex;
+    position: relative; 
+    right:260px; 
+    cursor: pointer;
+}
+
+#header>.container>.top>.left>.favorite>img{
+    width:31px;
+    height:25px;
+    position: relative; 
+    top:15px;
+    right:3px; 
+}
+#header>.container>.top>.left>.favorite>p.favorite{
+    color: #FFF;
+    font-size: 14px; 
+    position: relative; 
+    top:5px;
+}
+#header>.container>.top>.left>.login{
+    width:130px;
+    height:40px;
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+    border:1px solid #fafafa;
+    position: relative; 
+    right:280px;
+    cursor: pointer;
+    
+}
+#header>.container>.top>.left>.login> img{
+    position: relative; 
+    top:8px;
+    right:20px;
+ }
+#header>.container>.top>.left>.login> p.login{
+   font-weight: 300;
+   font-size: 14px;
+   padding: 0 0.75rem;
+   position: relative; 
+   bottom:40px; 
+   right:35px;
+}
+/* ****** Search****** */
+#header>.container>.search{
+    cursor: pointer;
+    width:650px;
+    height: 30px;
+    padding: 1.13563rem 1.5rem 1.07313rem;
+    background-color: #FFF;
+    border:1px solid #fff;
+    border-radius: 8px;
+    margin: 0 auto;;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+#header>.container>.search>.state{
+    width:35%;
+    height:100%;
+    border-left:1px solid  #dad5d5;
+    /* margin-left: 10px; */
+}
+#header>.container>.search>.state span{
+    display: block;
+    font-size: .8rem;
+    color: #131b1f;
+
+}
+#header>.container>.search>.state span.text1{
+    margin-top: -4px;
+}
+ /* #header>.container>.search>.state span.text2{
+    opacity: .5;
+    margin-top: 2px;
+} 
+#header>.container>.search>.state >select{
+   width:200px;
+}  */
+ #header>.container>.search>.state input.text2{
+    opacity: .5;
+    margin-top: 2px;
+    border: none;
+    padding: 4px;
+} 
+#header>.container>.search>.timelogin{
+    width:20%;
+    height:100%;
+    border-left:1px solid  #dad5d5;
+    margin-right: 15px;
+}
+#header>.container>.search>.timelogin span{
+    display: block;
+    font-size: .8rem;
+    color: #131b1f;
+}
+.holderHeader>#header>.container>.search>.timelogin span.text1{
+    margin-top: -4px;
+}
+/* #header>.container>.search>.timelogin span.text2{
+    opacity: .5;
+    margin-top: 2px;
+} */
+#header>.container>.search>.timelogin input.text2{
+    opacity: .5;
+    margin-top: 2px;
+    border: none;
+    padding: 4px;
+    width:100px;
+} 
+#header>.container>.search>.timelogout{
+    width:20%;
+    height:100%;
+    border-left:1px solid  #dad5d5;
+    margin-right: 15px;
+}
+.holderHeader>#header>.container>.search>.timelogout span{
+    display: block;
+    font-size: .8rem;
+    color: #131b1f;
+}
+.holderHeader>#header>.container>.search>.timelogout span.text1{
+    margin-top: -4px;
+}
+/* #header>.container>.search>.timelogout span.text2{
+    display: block;
+    opacity: .5;
+    margin-top: 2px;
+} */
+ #header>.container>.search>.timelogout input.text2{
+    display: block;
+    opacity: .5;
+    margin-top: 2px;
+    border: none;
+    padding: 4px;
+    width:100px;
+}
+#header>.container>.search>.number{
+    width:15%;
+    height:100%;
+    margin-right: 15px;
+}
+#header>.container>.search>.number span{
+    display: block;
+    font-size: .8rem;
+    color: #131b1f;
+}
+#header>.container>.search>.number span.text1{
+    margin-top: -4px;
+
+}
+/* #header>.container>.search>.number span.text2{
+    opacity: .5;
+    margin-top: 2px;
+
+} */
+#header>.container>.search>.number > input.text2{
+    opacity: .5;
+    margin-top: 2px;
+    border: none;
+    padding: 4px;
+    width:60px;
+}
+
+#header>.container>.search .btn{
+    margin-right: 6px;
+    width:35px; 
+    height: 35px;
+    background-color: rgb(43, 42, 42);
+    padding: 2px 4px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 5px;
+}
+#header>.container>.search .btn img{
+    background-image: #fff;
+}
+
+/*  */
+#header>.container>.bottom{
+    
+    margin-right: 30px;
+    position: relative;
+    top:130px;
+}
+#header>.container>.bottom>.text1{
+    
+    color: #131b1f;
+    font-size: 1.625rem;
+    font-weight: bold;
+}
+#header>.container>.bottom>.text2{
+    
+    color: #131b1f;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+#header>.container>.bottom>.btnView{
+    font-weight: 800;
+    margin-top: 1.25rem;
+    color: #131b1f;
+    border-radius: 0.625rem;
+    padding: 0.4375rem 0;
+    background-color: #fff;
+    border: 2px solid #efefef;
+    width: 100px;
+
+}
+/* *************** Modal ***************** */
+/* .hide{
+    display: none;
+}
+.show{
+    display: block;
+} */
+
+#modal{
+    position: fixed;
+	top:170px;
+    left:30%;
+
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    border:1px solid #ddd;
+    margin: 0 auto;
+    transition: .8s;
+}
+#modal>.closeBtn{
+    width:40px;
+    height: 40px;
+    background: url(../img/image/modalimg/close1.JPG) no-repeat;
+    position: absolute;
+    top:10px;
+    left:10px;
+    cursor: pointer;
+}
+#modal>.arm{
+    width: 100px;
+    height: 40px;   
+    background: url(../img/image/modalimg/arm.JPG) no-repeat;
+    margin: 0 auto;
+}
+#modal>.text1{
+    margin: 1.6875rem 0 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-align: center;
+}
+#modal>.text2{
+    margin: 0;
+    line-height: 2;
+    font-size: .875rem;
+    font-weight: 300;
+    opacity: .5;
+    text-align: center;
+}
+#modal>input{
+    direction: ltr; 
+   width: 330px;
+   color: #a4a5a7;
+   border: 1px solid #131b1f ;
+   padding: 1.08375rem 0.5rem;
+   font-size: .8rem;
+   font-weight: 400;
+   margin-right: 75px;
+   margin-top: 40px; 
+    border-radius:15px;
+}
+#modal>.btn{
+    width: 330px;
+    padding: .7rem 0.5rem;
+    background-color: #131b1f;
+    border: 1px solid #131b1f ;
+    font-weight: 400;
+    margin-right: 75px;
+    margin-top: 40px; 
+    border-radius:15px;
+
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+ #modal.hide{
+	transform: translateY(-200%);
+}
+#modal.show{
+	transform: translateY(0%);
+} 
+
+/* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+
+    #header>.container>.top>.right>img{
+       margin-right:20px;
+     }
+    #header>.container>.top>.left{
+        margin-left:450px;
+    }
+    /*  Search */
+    #header>.container>.search{
+        width:550px;
+        height: 30px;
+        margin: 0 200px;
+    }
+   
+}	
+
+@media screen and (max-width:800px){
+    #header{
+        width: 100%;
+        height:450px;;
+    }
+    #header>.container>.top>.right>img{
+        margin-right:20px;
+      }
+     #header>.container>.top>.left{
+     }
+     #header>.container>.top>.left>.experience{
+        display: none;
+    }
+
+    #header>.container>.top>.left>.favorite{
+        display: none;
+    }
+
+    /*  Search */
+    #header>.container>.search{
+        width:500px;
+        height: 30px;
+        margin: 0 120px;
+    }  
+    #header>.container>.bottom{
+    
+        margin-right: 30px;
+        position: relative;
+        top:90px;
+    }  
+    #header>.container>.bottom>.text1{
+        font-size: 1rem;
+    }
+    #header>.container>.bottom>.text2{
+        font-size: .9rem;
+    }
+    #header>.container>.bottom>.btnView{
+        margin-top: 1.5rem;
+        padding: 0.2375rem 0;
+    }
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    #header{
+        width: 100%;
+        height:350px;
+    }
+ 
+    #header>.container>.top>.right>img{
+       margin-right: 20px;
+    }
+    #header>.container>.top>.left{
+       
+    }
+    #header>.container>.top>.left>.experience{
+       /* display: none; */
+   }
+
+   #header>.container>.top>.left>.favorite{
+       /* display: none; */
+   }
+    #header>.container>.top>.left>.login{
+        /* width:120px;
+        height:30px;
+        position: relative; 
+        top:5px;      */
+    }
+    #header>.container>.top>.left>.login> img{
+        /* position: relative; 
+        top:2px;
+        right:10px; */
+     }
+    #header>.container>.top>.left>.login> p.login{
+       /* font-weight: 300;
+       font-size: 14px;
+       padding: 0 0.75rem;
+       position: relative; 
+       bottom:47px; 
+       right:27px; */
+    }
+
+    /*  Search */
+    #header>.container>.search{
+        width:500px;
+        height: 27px;
+        margin: 0 30px;
+    }  
+    #header>.container>.bottom{
+    
+        margin-right: 30px;
+        position: relative;
+        top:40px;
+    }  
+    #header>.container>.bottom>.text1{
+        font-size: 1rem;
+
+    }
+    #header>.container>.bottom>.text2{
+        font-size: .9rem;
+    }
+    #header>.container>.bottom>.btnView{
+        margin-top: 1rem;
+        padding: 0.2375rem 0;
+    }
+
+}

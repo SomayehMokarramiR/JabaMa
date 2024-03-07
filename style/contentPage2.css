@@ -1,0 +1,329 @@
+/* *********Title *********** */
+#content>.container>.title{
+    width: 100%;
+    height: 50px;
+    margin: 30px 30px 0  0;
+}
+#content>.container>.title>span.text1{
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    color: #444040;
+}
+#content>.container>.title>span.text2{
+    display: block;
+    font-weight: 100;
+    font-size: 15px;
+    color: #777373;
+}
+
+/* **********subTitle********** */
+
+#content>.container>.subTitle{
+    width: 100%;
+    height: 50px;
+    margin: 20px 30px 0  0;
+    display:flex;
+    gap:14px;
+}
+#content>.container>.subTitle>.locationDefinite{
+    cursor: pointer;
+    margin-bottom: .5rem;
+    border-radius: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #dddedf;
+    padding: .5625rem .875rem .5625rem 1rem;
+    display:flex;
+}
+#content>.container>.subTitle>.locationDefinite> input:checked +.location{
+    border-color: #131b1f;
+    background-color: #f8f8f8;
+}
+#content>.container>.subTitle>.locationDefinite > input{
+    width:50%;
+    height:50%;
+    position: relative;
+    left:10px;
+}
+#content>.container>.subTitle>.locationDefinite > label{
+    font-weight: 400;
+    font-size: .875rem;
+    color: #131b1f;
+    white-space: nowrap;
+    /* position: relative;
+    bottom: 15px;*/
+} 
+
+#content>.container>.subTitle>.lastMinute{
+    cursor: pointer;
+    margin-bottom: .5rem;
+    border-radius: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #dddedf;
+    padding: .5625rem .875rem .5625rem 1rem;
+    display:flex;
+}
+#content>.container>.subTitle>.lastMinute > input{
+    width:50%;
+    height:50%;
+    position: relative;
+    left:10px;
+}
+#content>.container>.subTitle>.lastMinute > label{
+    display: block;
+    font-weight: 400;
+    font-size: .875rem;
+    color: #131b1f;
+    white-space: nowrap;
+    /* position: relative;
+    bottom: 15px; */
+}
+
+
+
+/* ********** Sort ********** */
+/* 
+#content > .container > .sort{	
+    width: 100%;
+    height: 50px;
+    margin: 10px 30px 0  0;
+    display:flex;
+    gap:14px;
+}
+
+#content > .container> .sort > .title{	
+	font-size:20px;
+	padding-right:30px;
+	background:url("../img/image/icons/sort.png") no-repeat 100% 50%;
+	background-size:27px;	
+    line-height:50px;
+	
+}
+#content > .container > .sort > input{
+	display:none;
+}
+#content > .container > .sort > input:checked + label{
+	color:red;
+	font-size:17px;
+}
+
+#content > .container> .sort > label{
+	margin-right:20px;
+	cursor:pointer;
+	line-height:50px;
+} */
+
+/* ******************** */
+
+
+#content>.section> .slider{
+     /* overflow: hidden;  */
+    justify-content: center;
+    margin:0 80px;
+ }
+ #content>.section>.slider>.gal{
+     /* width:100%; */
+     /* height: 100%; */
+     display: flex;
+     flex-flow: row wrap; 
+     gap:10px;
+     position: relative;
+     left: 0%;
+ }
+ #content>.section> .slider>.gal>.items{
+     width: 280px;
+     height:400px;
+     margin-left: 9px;
+     background-color: #fff;
+     border-radius: 10px 10px 10px 10px;
+     margin-top: 50px;
+     float: right; 
+
+     position:relative;
+ }
+ 
+ #content>.section>.slider>.gal>.items>img{
+     width: 100%;
+     height: 200px;
+     border: 1px solid transparent;
+     border-radius: 5px; 
+     cursor: pointer;
+ 
+ }
+ #content>.section>.slider>.gal>.items>.fav{
+    width:30px;
+    height:30px;
+
+    border: 1px solid transparent;
+    border-radius: 4px; 
+    cursor: pointer;
+
+   position: absolute;
+   left:5px;
+   top:5px;
+
+}
+#content>.section>.slider>.gal>.items>.fav >.favImg{
+    width:100%;
+    height:100%;
+   
+}
+ #content>.section>.slider>.gal>.items>.describe{
+     margin-right: 20px;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.star{
+     width:36px;
+     height: 20px;
+     margin-left: 10px;
+     background: url("../img/image/icons/star.PNG") repeat-x;
+     background-size: 18px;
+     display: block;
+     float: right;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.view{
+     opacity: .5;
+     font-weight: 700;
+     font-size: .75rem;
+     display: block;
+     float: right;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.desc{
+     clear: both;
+     font-size: 14px;
+     display: block;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.date{
+     opacity: .5;
+     font-weight: 700;
+     font-size: .75rem;
+     margin: 0 0 .5rem;
+     display: block;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.location{
+     margin: 0 0 .9375rem;
+     align-items: center;
+     color: #323c41;
+ }
+
+ #content>.section>.slider>.gal>.items>.describe>.room{
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+}
+#content>.section>.slider>.gal>.items>.describe>.number{
+    margin: 0 0 .9375rem;
+    align-items: center;
+    color: #323c41;
+}
+ #content>.section>.slider>.gal>.items>.describe>.priceOffer{
+     width: 250px;
+     height: 30px;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.priceOffer>.Price2{
+    font-size: .75rem;
+    font-weight: 400;
+ }
+ #content>.section>.slider>.gal>.items>.describe>.priceOffer>.price{
+    font-weight: 600;
+    font-size: .875rem;
+}
+ /* #content>.section>.slider>.gal>.items>.describe>.priceOffer>.price span{
+    opacity: .5;
+    font-size: .75rem;
+    font-weight: 400;
+} */
+#content>.section>.slider>.gal>.items>.describe>.priceOffer>.price>.spp{
+    /* display: block; */
+    opacity: .5;
+    font-size: .75rem;
+    font-weight: 400;
+} 
+ #content>.section>.slider>.gal>.items>.describe>.Reservation{
+    width:85px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+
+    color: #131b1f;
+    display: flex;
+    height: 1.625rem;
+    font-weight: 400;
+    font-size: .75rem;
+    margin-top: .25rem;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 0 .4375rem 0 .625rem;
+
+ }
+ #content>.section>.slider>.gal>.items>.describe>.Reservation>img{
+    width: 15px;
+    height:15px;
+
+ }
+ /* #content>.section>.slider>.gal>.items>.describe>.Reservation>p{
+    font-size: .75rem;
+    font-weight: 400;
+
+ } */
+
+#content>.section>.slider>.gal>.items>.describe>.Reservation>.resiv{
+    font-size: .75rem;
+    font-weight: 400;
+ } 
+
+ #content>.section>.slider>.gal>.items>.describe>.favorite{
+
+    width:110px;
+    height:35px;
+    display: flex;
+    cursor: pointer;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    white-space: nowrap;
+    background-color: transparent;
+    /* float: left; */
+    /* position: relative; 
+    left:230px; 
+    bottom:75px;  */
+}
+
+#content>.section>.slider>.gal>.items>.describe>.favorite>img{
+    width:31px;
+    height:25px;
+     position: relative; 
+    top:5px;
+}
+#content>.section>.slider>.gal>.items>.describe>.favorite>p.favorite{
+    color: #131b1f;
+    font-size: .8rem;
+    position: relative; 
+    bottom:5px;
+    left:-2px;
+    font-weight:600;
+   
+}
+
+ /* ******************* Responsive ******************** */
+
+
+@media screen and (max-width:1000px){
+   
+}	
+
+@media screen and (max-width:800px){
+     
+}
+
+/* *** */
+
+@media screen and (max-width:600px){
+    
+
+}
+
+/* *** */
+@media screen and (max-width:1200px){	
+
+}
+/* *** */
